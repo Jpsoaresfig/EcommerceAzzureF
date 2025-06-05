@@ -66,10 +66,12 @@ function LoginPage() {
 
   return (
     <div className="login-container">
-      <h2>Azzure E-commerce</h2>
+      <img src="./azzure.png" alt="Logo Azzure" className="logo" />
+      <h2>Azzure</h2>
+      <p className="login-title">Login</p>
       <form onSubmit={handleLogin} className="login-form">
         <div className="form-group">
-          <label htmlFor="email">Usuário/Email:</label>
+          <label htmlFor="email">Email:</label>
           <input
             type="text"
             id="email"

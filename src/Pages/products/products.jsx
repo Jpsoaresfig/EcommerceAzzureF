@@ -16,7 +16,7 @@ function ProductsPage() {
 
         if (!authToken) {
           console.warn('Nenhum token encontrado, redirecionando para login.');
-          navigate('/login'); // Usuário não autenticado, redireciona
+          navigate('/login'); 
           return;
         }
 
