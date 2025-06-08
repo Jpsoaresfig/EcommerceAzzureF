@@ -13,7 +13,7 @@ function LoginPage() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:8080/auth/login', {
+      const response = await fetch('http://localhost:8081/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
