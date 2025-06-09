@@ -43,25 +43,7 @@ function LoginPage() {
   };
 
   const handleRegister = async () => {
-    setError('');
-    try {
-      const response = await fetch('http://localhost:8080/auth/register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email: email, password: password, role: 'USER' }),
-      });
-
-      if (response.ok) {
-        alert('Usuário registrado com sucesso! Agora você pode fazer login.');
-      } else {
-        const errorData = await response.json();
-        setError(errorData.message || 'Erro ao registrar usuário.');
-      }
-    } catch (apiError) {
-      setError('Erro de conexão ao registrar.');
-    }
+    navigate('/register');
   };
 
   return (
