@@ -48,7 +48,7 @@ function LoginPage() {
 
   return (
     <div className="login-container">
-      <img src="./azzure.png" alt="Logo Azzure" className="logo" />
+      <div className="login-logo"></div>
       <h2>Azzure</h2>
       <p className="login-title">Login</p>
       <form onSubmit={handleLogin} className="login-form">

@@ -1,13 +1,13 @@
-body {
+/*body {
   margin: 0;
   padding: 0;
-  background-color: #5bb2bd; /* cor inspirada na logo */
+  background-color: #5bb2bd; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 .register-container {
   background: #ffffff;
