@@ -3,6 +3,7 @@ import Home from './Pages/homepage/home.jsx';
 import Login from './Pages/login/login.jsx';
 import Register from './Pages/register/register.jsx';
 import ProtectedRoute from './Components/ProtectedRoute.jsx';
+import AllProductsPage from './Pages/AllproductsPage/AllproductsPage.jsx'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
         <Route
           path="/products"
           element={
@@ -18,6 +20,16 @@ function App() {
             </ProtectedRoute>
           }
         />
+
+        <Route
+          path="/all-products"
+          element={
+            <ProtectedRoute>
+              <AllProductsPage />
+            </ProtectedRoute>
+          }
+        />
+
         <Route path="/" element={<Navigate to="/login" />} />
       </Routes>
     </Router>

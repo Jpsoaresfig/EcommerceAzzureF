@@ -1,34 +1,49 @@
-
 import './home.css';
-function home() {
+import React from 'react';
+import ProductList from '../../Components/ProductList.jsx';
+import { Link } from 'react-router-dom';
 
+//lembrar de validar o token de autenticação e verificar se o usuário está logado antes de renderizar a página
 
+function Home() {
   return (
+    <div className="home">
+      {/* Banner principal */}
+      <section className="banner">
+        <div className="banner-content">
+          <h1 className="banner-title">Black Friday Azzure</h1>
+          <p className="banner-subtitle">
+            Aproveite as melhores ofertas e faça parte da nossa família!
+          </p>
+          <Link to="/all-products" className="btn-primary">Confira os Produtos</Link>
+        </div>
+      </section>
 
-    <div className='home'>
-      <div className='home-container'>
-        <header className='header-container'>
-          <div className='header'>
-            <h1 className='headertitle'>Bem-vindo(a) a Azzure</h1>
-            <h2 className='headersubtitle'>
-              Mais do que produtos, aqui você encontra uma família.
-            </h2>
-            <div className='links'>
-              <a href="/products" className='linkProducts'>Produtos</a>
+      {/* Promoções */}
+      <section className="promotions">
+        <h2 className="section-title">Ofertas Imperdíveis</h2>
+         
+      </section>
 
-              <a href="/about" className='linkabout'>About us</a>
+      {/* Sobre a Azzure */}
+      <section className="about">
+        <h2 className="section-title">Quem Somos</h2>
+        <p>
+          Na Azzure, acreditamos que mais do que produtos, construímos uma família.
+          Oferecemos qualidade, confiança e promoções especiais para você.
+        </p>
+        <a href="/about" className="btn-primary">Saiba Mais</a>
+      </section>
 
-              <a href="/social" className='linksocial'>Social</a>
-            </div>
-          </div>
-
-        </header>
-      </div>
-
-
+      {/* Rodapé */}
+      <footer className="footer">
+        <p>© 2025 Azzure. Todos os direitos reservados.</p>
+        <div className="social-links">
+          <a href="/social">Redes Sociais</a>
+        </div>
+      </footer>
     </div>
-
-
   );
 }
-export default home;
+
+export default Home;
