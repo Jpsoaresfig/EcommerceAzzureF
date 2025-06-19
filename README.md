@@ -1,8 +1,4 @@
-
-</head>
-<body>
-
-  <h1>EcommerceAzzureF</h1>
+<h1>EcommerceAzzureF</h1>
 
   <p><strong>Frontend React para e-commerce, focado em performance, usabilidade e integração com Azure.</strong></p>
 
@@ -20,29 +16,11 @@
 
   <hr />
 
-  <h2>Estrutura do Projeto</h2>
-  <pre><code>EcommerceAzzureF/
-├── public/             # Arquivos estáticos (index.html, favicon, etc)
-├── src/
-│   ├── components/     # Componentes React reutilizáveis
-│   ├── pages/          # Páginas principais (Home, Produtos, Carrinho, Checkout)
-│   ├── services/       # Serviços para chamadas API
-│   ├── context/        # Context API para gerenciamento de estado global
-│   ├── assets/         # Imagens, fontes, ícones
-│   ├── App.jsx         # Componente raiz com rotas
-│   └── index.jsx       # Entrada do ReactDOM
-├── package.json        # Dependências e scripts do projeto
-└── README.md
-  </code></pre>
-
-  <hr />
-
   <h2>Como Rodar Localmente</h2>
   <ol>
     <li>Clone o repositório:
       <pre><code>git clone https://github.com/Jpsoaresfig/EcommerceAzzureF.git
-cd EcommerceAzzureF
-      </code></pre>
+cd EcommerceAzzureF</code></pre>
     </li>
     <li>Instale as dependências:
       <pre><code>npm install</code></pre>
