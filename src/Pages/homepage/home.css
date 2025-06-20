@@ -1,7 +1,4 @@
-.home {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-}
+
 
 /* Banner */
 .banner {
@@ -13,14 +10,17 @@
 .banner-title {
   font-size: 3rem;
   margin-bottom: 10px;
+  color: #f0a500; /* cor dourada como no logo */
 }
 .banner-subtitle {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
+
+/* Botão principal */
 .btn-primary {
   background-color: #f0a500;
-  color: #333;
+  color: #003366;
   padding: 12px 30px;
   text-decoration: none;
   font-weight: bold;
@@ -40,6 +40,7 @@
 .section-title {
   font-size: 2rem;
   margin-bottom: 30px;
+  color: #003366;
 }
 .promo-cards {
   display: flex;
@@ -60,6 +61,8 @@
   border-radius: 6px;
   margin-bottom: 15px;
 }
+
+/* Botão secundário */
 .btn-secondary {
   background-color: #006699;
   color: white;
@@ -84,11 +87,12 @@
 .about p {
   font-size: 1.1rem;
   margin-bottom: 20px;
+  color: #003366;
 }
 
 /* Rodapé */
 .footer {
-  background-color: #222;
+  background-color: #003366;
   color: #ddd;
   padding: 20px;
   text-align: center;

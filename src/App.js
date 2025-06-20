@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './Pages/homepage/home.jsx';
 import Login from './Pages/login/login.jsx';
 import Register from './Pages/register/register.jsx';
-import ProtectedRoute from './Components/ProtectedRoute.jsx';
+import ProtectedRoute from './Components/protectedRoute/ProtectedRoute.jsx';
 import AllProductsPage from './Pages/AllproductsPage/AllproductsPage.jsx'
 
 function App() {

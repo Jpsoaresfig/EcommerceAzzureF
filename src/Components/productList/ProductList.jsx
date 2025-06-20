@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ProductCard from './ProductCard/ProductCard'
+import ProductCard from '../ProductCard/ProductCard'
 
 
 function ProductList() {

@@ -1,6 +1,6 @@
 import './home.css';
 import React from 'react';
-import ProductList from '../../Components/ProductList.jsx';
+import ProductList from '../../Components/productList/ProductList.jsx';
 import { Link } from 'react-router-dom';
 import Header from '../../Components/Header/Header.jsx';
 
@@ -14,7 +14,7 @@ function Home() {
       {/* Banner principal */}
       <section className="banner">
         <div className="banner-content">
-          <h1 className="banner-title">Black Friday Azzure</h1>
+          <h1 className="banner-title">Melhor site de venda de Joias</h1>
           <p className="banner-subtitle">
             Aproveite as melhores ofertas e faça parte da nossa família!
           </p>
