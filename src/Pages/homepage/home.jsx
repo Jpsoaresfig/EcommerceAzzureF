@@ -2,12 +2,15 @@ import './home.css';
 import React from 'react';
 import ProductList from '../../Components/ProductList.jsx';
 import { Link } from 'react-router-dom';
+import Header from '../../Components/Header/Header.jsx';
 
 //lembrar de validar o token de autenticação e verificar se o usuário está logado antes de renderizar a página
 
 function Home() {
   return (
     <div className="home">
+      <Header />
+
       {/* Banner principal */}
       <section className="banner">
         <div className="banner-content">
