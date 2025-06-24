@@ -27,7 +27,7 @@ function LoginPage() {
 
         if (data && data.token) {
           localStorage.setItem('authToken', data.token);
-          navigate('/products');
+          navigate('/homepage');
         } else {
           setError('Resposta da API incompleta: token não encontrado.');
         }

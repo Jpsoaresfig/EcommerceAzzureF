@@ -18,7 +18,7 @@ function AllProductsPage() {
         </main>
 
         <div className="back-home">
-          <a href="/products">← Voltar para a Home</a>
+          <a href="/homepage">← Voltar para a Home</a>
         </div>
       </div>
     </>

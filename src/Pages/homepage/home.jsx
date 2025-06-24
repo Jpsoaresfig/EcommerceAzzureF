@@ -1,12 +1,21 @@
 import './home.css';
 import React from 'react';
-import ProductList from '../../Components/productList/ProductList.jsx';
 import { Link } from 'react-router-dom';
 import Header from '../../Components/Header/Header.jsx';
 
 //lembrar de validar o token de autenticação e verificar se o usuário está logado antes de renderizar a página
 
 function Home() {
+
+  //não permitir voltar a tela de login se o usuário já estiver logado
+  if(localStorage.getItem('token')) {
+    window.location.href = '/homepage';
+  }
+
+
+
+
+
   return (
     <div className="home">
       <Header />
