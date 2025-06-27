@@ -10,6 +10,7 @@ import Register from "./Pages/register/register.jsx";
 import ProtectedRoute from "./Components/protectedRoute/ProtectedRoute.jsx";
 import AllProductsPage from "./Pages/AllproductsPage/AllproductsPage.jsx";
 import ScreenBuy from "./Pages/ScreenBuy/ScreenBuy.jsx";
+import About from "./Pages/about/about.jsx";
 
 function App() {
   return (
@@ -43,6 +44,14 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route
+          path="/about"
+          element={
+            <ProtectedRoute>
+            <About />
+            </ProtectedRoute>
+          }
+          />
 
         <Route path="/" element={<Navigate to="/login" />} />
       </Routes>

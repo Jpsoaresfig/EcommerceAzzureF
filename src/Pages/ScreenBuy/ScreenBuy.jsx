@@ -8,6 +8,9 @@ function ScreenBuy() {
   const navigate = useNavigate();
   const [product, setProduct] = useState(null);
 
+
+
+
   useEffect(() => {
     const token = localStorage.getItem('authToken');//lembrar que é authToken
     console.log("Token dentro do ScreenBuy:", token);
@@ -35,6 +38,8 @@ function ScreenBuy() {
           navigate('/login');
         }
       });
+
+
   }, [id, navigate]);
 
   return (
