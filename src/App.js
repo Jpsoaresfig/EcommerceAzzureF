@@ -1,9 +1,15 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Home from './Pages/homepage/home.jsx';
-import Login from './Pages/login/login.jsx';
-import Register from './Pages/register/register.jsx';
-import ProtectedRoute from './Components/protectedRoute/ProtectedRoute.jsx';
-import AllProductsPage from './Pages/AllproductsPage/AllproductsPage.jsx'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Home from "./Pages/homepage/home.jsx";
+import Login from "./Pages/login/login.jsx";
+import Register from "./Pages/register/register.jsx";
+import ProtectedRoute from "./Components/protectedRoute/ProtectedRoute.jsx";
+import AllProductsPage from "./Pages/AllproductsPage/AllproductsPage.jsx";
+import ScreenBuy from "./Pages/ScreenBuy/ScreenBuy.jsx";
 
 function App() {
   return (
@@ -26,6 +32,14 @@ function App() {
           element={
             <ProtectedRoute>
               <AllProductsPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/compra/:id"
+          element={
+            <ProtectedRoute>
+              <ScreenBuy />
             </ProtectedRoute>
           }
         />

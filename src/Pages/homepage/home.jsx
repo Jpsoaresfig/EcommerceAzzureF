@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../Components/Header/Header.jsx';
 import Carousel from '../../Components/carousel/carousel.jsx';
-
 import './home.css';
 
 function Home() {

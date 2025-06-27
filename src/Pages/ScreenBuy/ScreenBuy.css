@@ -1,0 +1,77 @@
+/* ScreenBuy.css */
+
+.product-details {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.product-details h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.product-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.product-details p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+.product-details p:last-of-type {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #0a74da;
+}
+
+.product-details button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #0a74da;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-details button:hover {
+  background-color: #085ab3;
+}
+
+/* Loading message styling */
+.product-details p {
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsividade simples */
+@media (max-width: 480px) {
+  .product-details {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .product-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-details button {
+    width: 100%;
+    padding: 14px 0;
+  }
+}
