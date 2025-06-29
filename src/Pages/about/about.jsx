@@ -11,6 +11,8 @@ function About() {
             document.body.classList.remove('about-page-body');
         };
     }, []);
+
+
     return (
         <div className="about-container">
 
@@ -50,6 +52,9 @@ function About() {
                     <strong>Nossos acessórios são mais do que simples detalhes.<br />
                         Eles são uma extensão de quem você é.</strong>
                 </p>
+                <div className='button_about'>
+                <button className="about-button" onClick={() => window.location.href = '/all-products'}>venha viver a experiência Azzure</button>
+                </div>
             </section>
         </div>
     );

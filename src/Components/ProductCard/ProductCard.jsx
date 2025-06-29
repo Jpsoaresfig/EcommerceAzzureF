@@ -16,9 +16,9 @@ function ProductCard({ product }) {
   return (
     <div className="product-card">
       <img src={product.imageUrl} alt={product.name} className="product-image" />
-      <h3>{product.name}</h3>
-      <p>{product.description}</p>
-      <p>R$ {(product.price / 100).toFixed(2)}</p>
+      <h3 className='product-h3'>{product.name}</h3>
+      <p className='product-p'>{product.description}</p>
+      <p className='product-p'>R$ {(product.price / 100).toFixed(2)}</p>
       <button className="buy-button" onClick={handleBuyClick}>Comprar</button>
     </div>
   );

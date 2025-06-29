@@ -16,7 +16,8 @@ function Home() {
       {/* Seção de campanha com imagem e texto sobreposto */}
       <section className="campaign-section">
         <div className="campaign-content">
-          <h1 className="banner-title">Conheça nossos produtos Azzure</h1>
+          <img src="../images/background.png" alt="" />
+          <h2 className="banner-title">Conheça nossos produtos Azzure</h2>
           <p className="banner-subtitle">Joias feitas para brilhar com você</p>
           <Link to="/all-products" className="btn-primary">Ver Catálogo Completo</Link>
         </div>

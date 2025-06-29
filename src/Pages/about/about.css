@@ -58,3 +58,21 @@ body.about-page-body {
   color: #0a74da;
   margin-top: 1rem;
 }
+
+.about-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #0a74da;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button_about{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
