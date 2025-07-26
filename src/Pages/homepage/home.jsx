@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../Components/Header/Header.jsx';
 import Carousel from '../../Components/carousel/carousel.jsx';
+import Footer from '../../Components/footer/Footer.jsx';
 import './home.css';
 
 function Home() {
@@ -50,9 +51,10 @@ function Home() {
       </section>
 
 
-
-
+      
+    <Footer />
     </div>
+    
   );
 }
 
