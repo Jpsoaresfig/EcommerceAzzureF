@@ -14,7 +14,7 @@ function Home() {
     <div className="home">
       <Header />
 
-      {/* Seção de campanha com imagem e texto sobreposto */}
+      
       <section className="campaign-section">
         <div className="campaign-content">
           <h1 className='banner-main-title'>Azzure</h1>
@@ -25,7 +25,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Destaques visuais de produtos */}
+      
        <section className="banner">
         <h2 className="section-title">Destaques da Semana</h2>
           <div className="banner-carousel">
@@ -44,7 +44,7 @@ function Home() {
         
        
       </section>
-      {/* Promoções */}
+      
       <section className="promotions">
         <h2 className="section-title">Ofertas Imperdíveis</h2>
         <p className="text-center">Descontos especiais para membros da nossa comunidade</p>
@@ -54,6 +54,7 @@ function Home() {
       
     <Footer />
     </div>
+    
     
   );
 }
